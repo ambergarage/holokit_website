@@ -3,8 +3,8 @@
 [Master Stylesheet]
 
 Project:    Rhythm
-Version:    2.3
-Last change:    18.09.2015
+Version:    2.8
+Last change:    10.06.2016
 Primary use:    MultiPurpose Template  
 -------------------------------------------------------------------*/
 
@@ -1448,7 +1448,7 @@ a.btn-mod:focus{
 .nav-logo-wrap .logo{
 	display: table-cell;
 	vertical-align: middle;
-	max-width: 118px;
+	max-width: 200px;
     height: 75px;
     
     -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
@@ -2793,58 +2793,58 @@ a.logo:hover{
  */
 
 .split-section{
-	width: 100%;
-	display: block;	
-	position: relative;
+    width: 100%;
+    display: block;    
+    position: relative;
     overflow: hidden;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
     -webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-.split-section-headings{	
-	width: 38.2%;
-	float: left;
-	position: relative;
-	overflow: hidden;
-	text-align: center;
-	
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+.split-section-headings{    
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .ssh-table{
-	width: 100%;
-	display: table;
+    width: 100%;
+    min-height: 500px;
+    display: table;
 }
 .ssh-cell{
-	display: table-cell;	
-	padding-left: 10px;
-	padding-right: 10px;
-	vertical-align: middle;
-	
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+    display: table-cell;    
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: middle;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .split-section-content{
-	width: 61.8%;
-	float: right;
-	min-height: 300px;
-	position: relative;
+    width: 50%;
+    position: relative;
     overflow: hidden;
-	background: rgba(255,255,255, .97);
-	
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.split-section-wrapper{
+    padding: 0 80px;
 }
 
 
@@ -3341,7 +3341,7 @@ a.logo:hover{
     margin: 0 0 0 -10px;
 }
 .works-grid.work-grid-gut .work-item{
-    padding: 0 0 0px 0px;
+    padding: 0 0 10px 10px;
 }
 
 .work-item > a{
@@ -5563,6 +5563,39 @@ section:hover .small-item-carousel .owl-next{
     font-size: 17px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+}
+.label-new{
+    background: #f32929;
+    color: white;
+    padding: 2px 3px;
+    font-size: 9px;
+    font-weight: 700; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.label-for-button{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+.intro-label-round{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top:-5px;
+    right: -5px;
+    color: rgba(255,255,255, .85);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 50px;
+    background: #f32929;
+    
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
 }
 
 

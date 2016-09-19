@@ -3,8 +3,8 @@
 [Responsive Stylesheet]
 
 Project:    Rhythm
-Version:    2.5
-Last change:    30.03.2016
+Version:    2.6
+Last change:   18.04.2016
 Primary use:    MultiPurpose Template  
 -------------------------------------------------------------------*/
 
@@ -88,6 +88,10 @@ Primary use:    MultiPurpose Template
         width: 170px;
     }
     
+    .split-section-wrapper {
+        padding: 0 50px;
+    }
+    
 }
 
 /* ==============================
@@ -124,17 +128,6 @@ Primary use:    MultiPurpose Template
         width: 300px;
         padding: 15px 32px;
     }
-    .split-section-headings {
-        width: 30%;
-    }	
-    .split-section-content {
-        width: 70%;
-    }
-    
-	.split-section-headings .section-title{
-		font-size: 26px;
-		letter-spacing: 2px;
-	}
 
     .page-section{
         padding: 120px 0;

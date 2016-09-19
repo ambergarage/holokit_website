@@ -16,7 +16,7 @@
         });
         
         
-    
+        initWorkFilter();
         init_scroll_navigate();
         
         $(window).trigger("scroll");
@@ -45,7 +45,6 @@
         init_counters();
         init_team();
         initPageSliders();
-        initWorkFilter();
         init_map();
         init_wow();
         init_masonry();
@@ -56,6 +55,7 @@
         init_classic_menu_resize();
         init_side_panel_resize()
         js_height_init();
+        split_height_init();
         
     });
     
@@ -152,11 +152,11 @@
         $(".mobile-on .desktop-nav > ul").css("max-height", $(window).height() - $(".main-nav").height() - 20 + "px");
         
         // Mobile menu style toggle
-        if ($(window).width() <= 1200) {
+        if ($(window).width() <= 1024) {
             $(".main-nav").addClass("mobile-on");
         }
         else 
-            if ($(window).width() > 1200) {
+            if ($(window).width() > 1024) {
                 $(".main-nav").removeClass("mobile-on");
                 desktop_nav.show();
             }
@@ -967,11 +967,13 @@ function initWorkFilter(){
          $(".filter").removeClass("active");
          $(this).addClass("active");
          fselector = $(this).attr('data-filter');
-         
-         work_grid.isotope({
-             itemSelector: '.mix',
-             layoutMode: isotope_mode,
-             filter: fselector
+
+         work_grid.imagesLoaded(function(){
+             work_grid.isotope({
+                 itemSelector: '.mix',
+                 layoutMode: isotope_mode,
+                 filter: fselector
+             });
          });
          return false;
      });
@@ -1111,3 +1113,22 @@ function init_masonry(){
     })(jQuery);
 }
         
+        
+/* ---------------------------------------------
+ Split section
+ --------------------------------------------- */
+    
+function split_height_init(){
+    (function($){
+        
+        $(".ssh-table, .split-section-content").css("height", "auto");
+        
+        if ($(window).width() > 992) {
+            $(".split-section").each(function(){
+                var split_section_height = $(this).find(".split-section-content").innerHeight();
+                $(this).find(".ssh-table").height(split_section_height);
+            });
+        }
+            
+    })(jQuery);
+}
