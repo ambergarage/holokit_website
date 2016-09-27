@@ -79,9 +79,9 @@
 
                             <li><a href="#city" class="mn-has-sub">Cities <i class="fa fa-angle-down"></i></a><!-- Sub -->
                                 <ul class="mn-sub" >
-                                    <li><a href="#" id="sanfrancisco_menu_btn">San Francisco</a></li>
-                                    <li><a href="#" id="newyorkcity_menu_btn">New York City</a></li>
-                                    <li><a href="#" id="chicago_menu_btn">Chicago</a></li>
+                                    <li><a href="#city" id="sanfrancisco_menu_btn">San Francisco</a></li>
+                                    <li><a href="#city" id="newyorkcity_menu_btn">New York City</a></li>
+                                    <li><a href="#city" id="chicago_menu_btn">Chicago</a></li>
                                 </ul>
                                 <!-- End Sub -->
                             </li>
@@ -602,11 +602,11 @@
                 });
                 $("#newyorkcity_menu_btn").click(function (e) {
                     var owl = $("#city_content").data("owlCarousel");
-                    owl.goTo(1);
+                    owl.goTo(0);
                 });
                 $("#chicago_menu_btn").click(function (e) {
                     var owl = $("#city_content").data("owlCarousel");
-                    owl.goTo(2);
+                    owl.goTo(0);
                 });
 
                 if (!($("html").hasClass("mobile"))){
