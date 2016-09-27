@@ -29,8 +29,9 @@
 
         <style>
             .cityvr-title, a.logo:hover  {
-                font-family: Futura-Medium, "Trebuchet MS", Arial, sans-serif;
+                font-family: Futura-Medium, Trebuchet MS, Arial, sans-serif;
             }
+
         </style>
     </head>
     <body class="appear-animate">
@@ -49,8 +50,8 @@
                 <div class="full-wrapper relative clearfix">
                     <!-- Logo ( * your text or image into link tag *) -->
                     <div class="nav-logo-wrap local-scroll">
-                        <a href="#" class="logo cityvr-title">
-                            The City VR Experience
+                        <a href="#" class="logo cityvr-title" style="padding-left:10px;">
+                            <img src="images/logo_small.png" alt=""  />
                         </a>
                     </div>
                     <div class="mobile-nav">
@@ -63,17 +64,28 @@
                             
                             <!-- Item With Sub -->
                             <li><a href="#home">Home</a></li>
-                            <li><a href="#experience">The Experience</a></li>
-                            <li><a href="#" class="mn-has-sub">Cities <i class="fa fa-angle-down"></i></a><!-- Sub -->
+
+                            <li><a href="#" class="mn-has-sub">The Experience <i class="fa fa-angle-down"></i></a><!-- Sub -->
                                 <ul class="mn-sub" >
-                                    <li><a href="#" id="cityvr_menu_btn">San Francisco</a></li>
-                                    <li><a href="#" id="skywand_menu_btn">New York City</a></li>
-                                    <li><a href="#" id="airgraphy_menu_btn">Chicago</a></li>
+                                    <li><a href="#about">About</a></li>
+<!--                                     <li><a href="#press">Press</a></li> -->
+<!--                                     <li><a href="#ost">Sound Track</a></li> -->
+<!--                                     <li><a href="#photocontest">Photo Contest</a></li>--> 
+                                     <li><a href="#screenshots">Screenshots</a></li>
+                                    <li><a href="/terms">Terms &amp; Privacy</a></li>
                                 </ul>
                                 <!-- End Sub -->
                             </li>
-                            <li><a href="#press">Press</a></li>
-                            <li><a href="/terms">Terms</a></li>
+
+                            <li><a href="#city" class="mn-has-sub">Cities <i class="fa fa-angle-down"></i></a><!-- Sub -->
+                                <ul class="mn-sub" >
+                                    <li><a href="#sanfrancisco" id="sanfrancisco_menu_btn">San Francisco</a></li>
+                                    <li><a href="#newyorkcity" id="newyorkcity_menu_btn">New York City</a></li>
+                                    <li><a href="#chicago" id="chicago_menu_btn">Chicago</a></li>
+                                </ul>
+                                <!-- End Sub -->
+                            </li>
+
                             <li><a href="http://store.steampowered.com/app/517990/" target="_blank">Buy on Steam <i class="fa fa-steam fa-lg dark"></i></a></li>
                             <!-- End Item With Sub -->
 
@@ -112,7 +124,7 @@
                             </h2>                       
                             
                             <div>
-                            <a href="#" class="big-icon-link lightbox mfp-iframe"><span class="big-icon"><i class="fa fa-play"></i></span></a>
+                                <a href="https://vimeo.com/184466672" class="big-icon-link lightbox mfp-iframe"><span class="big-icon"><i class="fa fa-play"></i></span></a>
                             </div>
 
                             <h1>
@@ -145,7 +157,7 @@
                     <div class="section-text col-md-8 col-md-offset-2 mb-50 mb-sm-20">
                         <div class="row">
                             <div>
-                                City VR allows you to discover new perspectives to look upon cities like never have before. Touch and feel the skyscrapers. Teleport to go places. Take snapshots of favorite views and moments. Enjoy sunset from the top of the world. 
+                                The City VR Experience allows you to discover new perspectives to look upon cities like never have before. Touch and feel the skyscrapers. Teleport to go places. Take snapshots of favorite views and moments. Enjoy sunset from the top of the world. 
                             </div>
 
                         </div>
@@ -162,7 +174,7 @@
                                     <a href="#">What is City VR?</a>
                                 </dt>
                                 <dd>
-                                    City VR is an immersive virtual reality experience that allows you to discover new perspectives to look upon the world we live in like never have before. Every street and address matches its real-world equivalent - but City VR is more than just a 3D map. It enables you to travel through the streets like a giant, observe architecture from up on high, zoom in to the ground or zoom out to the air, change lighting and weather, and take snapshots of the most unique city views discovered on your own.
+                                    The City VR Experience is an immersive virtual reality experience that allows you to discover new perspectives to look upon the world we live in like never have before. Every street and address matches its real-world equivalent - but City VR is more than just a 3D map. It enables you to travel through the streets like a giant, observe architecture from up on high, zoom in to the ground or zoom out to the air, change lighting and weather, and take snapshots of the most unique city views discovered on your own.
                                 </dd>
                                 
                                 <dt>
@@ -193,275 +205,270 @@
                     </div>
                     
                 </div>
-
-                </div>
             </section>
             <!-- End About Section -->
             
-               
             <!-- Call Action Section -->
-            <section class="small-section bg-dark">
+            <section class="small-section bg-dark" id="screenshots">
                 <div class="container relative">
                     
                     <div class="align-center">
-                        <h3 class="banner-heading font-alt">Cities &amp; DLCs</h3>
-                    </div>
-                    
-                </div>
-            </section>
-            <!-- End Call Action Section -->
-            
-            
-
-            <!-- Section -->
-            <section class="page-section">
-                <div class="container relative">
-                    
-                    <div class="row">
-                        
-                        <div class="col-md-5 col-lg-4 mb-sm-40">
-                            
-                            <!-- About Project -->
-                            <div class="text">
-                                
-                                <h3 class="font-alt mb-30 mb-xxs-10">San Francisco</h3>
-                                <p><small>
-                                Freely explore massive area of San Francisco. Teleport yourself from AT&T park to Golden Gate Bridge. Get down your hands and knees on Market St. See the city skylines from Twin Peak. Walk alongside Coit Tower like a giant. Touch Transamerica Pyramid. Watch sunrise over Bay Bridge and Ferry Building. You'll experience San Francisco from perspectives you've never seen before. 
-                                </small></p>
-                                
-                                <div class="mt-40">
-                                    <a href="http://store.steampowered.com/app/517990/" target="_blank" class="btn btn-mod btn-medium btn-round">Available on Steam <i class="fa fa-steam fa-lg dark"></i></a>
-
-                                </div>
-                                
-                            </div>
-                            <!-- End About Project -->
-                            
-                        </div>
-                        
-                        <div class="col-md-7 col-lg-offset-1">
-                            
-                            <!-- Work Gallery -->
-                            <div class="work-full-media mt-0 white-shadow">
-                                <ul class="clearlist work-full-slider owl-carousel">
-                                    <li>
-                                        <img src="images/sanfrancisco/cover.png" alt="" />
-                                    </li>
-                                    <li>
-                                        <img src="images/sanfrancisco/cover.png" alt="" />
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- End Work Gallery -->
-                            
-                        </div>
-                        
-                     </div>
-                    
-                </div>
-            </section>
-            <!-- End Section -->
-
-                     
-            <!-- Divider -->
-            <hr class="mt-0 mb-0 "/>
-            <!-- End Divider -->
-
-            <!-- Section -->
-            <section class="page-section">
-                <div class="container relative">
-                    
-                    <div class="row">
-                        
-                        <div class="col-md-5 col-lg-4 mb-sm-40">
-                            
-                            <!-- About Project -->
-                            <div class="text">
-                                
-                                <h3 class="font-alt mb-30 mb-xxs-10">New York City</h3>
-                                <p><small>
-                                Freely explore massive area of San Francisco. Teleport yourself from AT&T park to Golden Gate Bridge. Get down your hands and knees on Market St. See the city skylines from Twin Peak. Walk alongside Coit Tower like a giant. Touch Transamerica Pyramid. Watch sunrise over Bay Bridge and Ferry Building. You'll experience San Francisco from perspectives you've never seen before. 
-                                </small></p>
-                                
-                                <div class="mt-40">
-                                    <a href="http://store.steampowered.com/app/517990/" target="_blank" class="btn btn-mod btn-medium btn-round">Coming soon to Steam <i class="fa fa-steam fa-lg dark"></i></a>
-
-                                </div>
-                                
-                            </div>
-                            <!-- End About Project -->
-                            
-                        </div>
-                        
-                        <div class="col-md-7 col-lg-offset-1">
-                            
-                            <!-- Work Gallery -->
-                            <div class="work-full-media mt-0 white-shadow">
-                                <ul class="clearlist work-full-slider owl-carousel">
-                                    <li>
-                                        <img src="images/sanfrancisco/cover.png" alt="" />
-                                    </li>
-                                    <li>
-                                        <img src="images/sanfrancisco/cover.png" alt="" />
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- End Work Gallery -->
-                            
-                        </div>
-                        
-                     </div>
-                    
-                </div>
-            </section>
-            <!-- End Section -->
-
-                     
-            <!-- Divider -->
-            <hr class="mt-0 mb-0 "/>
-            <!-- End Divider -->
-
-            <!-- Section -->
-            <section class="page-section">
-                <div class="container relative">
-                    
-                    <div class="row">
-                        
-                        <div class="col-md-5 col-lg-4 mb-sm-40">
-                            
-                            <!-- About Project -->
-                            <div class="text">
-                                
-                                <h3 class="font-alt mb-30 mb-xxs-10">Chicago</h3>
-                                <p><small>
-                                Freely explore massive area of San Francisco. Teleport yourself from AT&T park to Golden Gate Bridge. Get down your hands and knees on Market St. See the city skylines from Twin Peak. Walk alongside Coit Tower like a giant. Touch Transamerica Pyramid. Watch sunrise over Bay Bridge and Ferry Building. You'll experience San Francisco from perspectives you've never seen before. 
-                                </small></p>
-                                
-                                <div class="mt-40">
-                                    <a href="http://store.steampowered.com/app/517990/" target="_blank" class="btn btn-mod btn-medium btn-round">Coming soon to Steam <i class="fa fa-steam fa-lg dark"></i></a>
-                                </div>
-                                
-                            </div>
-                            <!-- End About Project -->
-                            
-                        </div>
-                        
-                        <div class="col-md-7 col-lg-offset-1">
-                            
-                            <!-- Work Gallery -->
-                            <div class="work-full-media mt-0 white-shadow">
-                                <ul class="clearlist work-full-slider owl-carousel">
-                                    <li>
-                                        <img src="images/sanfrancisco/cover.png" alt="" />
-                                    </li>
-                                    <li>
-                                        <img src="images/sanfrancisco/cover.png" alt="" />
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- End Work Gallery -->
-                            
-                        </div>
-                        
-                     </div>
-                    
-                </div>
-            </section>
-            <!-- End Section -->
-               
-            <!-- Call Action Section -->
-            <section class="small-section bg-dark">
-                <div class="container relative">
-                    
-                    <div class="align-center">
-                        <h3 class="banner-heading font-alt">Press</h3>
+                        <h3 class="banner-heading font-alt">Screenshots</h3>
                     </div>
                     
                 </div>
             </section>
             <!-- End Call Action Section -->
 
-             <!-- Testimonials Section -->
-            <section class="page-section bg-dark bg-dark-alfa-90 fullwidth-slider" data-background="images/full-width-images/section-bg-3.jpg">
-                
-                <!-- Slide Item -->
-                <div>
-                    <div class="container relative">
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-2 align-center">
-                                <!-- Section Icon -->
-                                <div class="section-icon">
-                                    <span class="icon-quote"></span>
-                                </div>
-                                <!-- Section Title --><h3 class="small-title font-alt">What people say?</h3>
-                                <blockquote class="testimonial white">
-                                    <p>
-                                        Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
-                                        risus utaliquam dapibus. Thanks!
-                                    </p>
-                                    <footer class="testimonial-author">
-                                        John Doe, doodle inc.
-                                    </footer>
-                                </blockquote>
-                            </div>
-                        </div>
+            <!-- Section -->
+            <section class="page-section">
+                <div class="container relative">
+                    
+                    <!-- Work Gallery -->
+                    <div class="work-full-media mb-80 mb-xs-40">
+                        
+                        <ul class="clearlist work-full-slider owl-carousel">
+                            <li>
+                                <img src="images/sanfrancisco/Screenshot_1.jpg" alt="" />
+                            </li>
+                            <li>
+                                <img src="images/sanfrancisco/Screenshot_2.jpg" alt="" />
+                            </li>
+                            <li>
+                                <img src="images/sanfrancisco/Screenshot_3.jpg" alt="" />
+                            </li>
+                            <li>
+                                <img src="images/sanfrancisco/Screenshot_4.jpg" alt="" />
+                            </li>
+                            <li>
+                                <img src="images/sanfrancisco/Screenshot_5.jpg" alt="" />
+                            </li>
+                            <li>
+                                <img src="images/sanfrancisco/Screenshot_6.jpg" alt="" />
+                            </li>
+                            <li>
+                                <img src="images/sanfrancisco/Screenshot_7.jpg" alt="" />
+                            </li>
+                            <li>
+                                <img src="images/sanfrancisco/Screenshot_8.jpg" alt="" />
+                            </li>
+                            <li>
+                                <img src="images/sanfrancisco/Screenshot_9.jpg" alt="" />
+                            </li>
+                            <li>
+                                <img src="images/sanfrancisco/Screenshot_10.jpg" alt="" />
+                            </li>
+                            <li>
+                                <img src="images/sanfrancisco/Screenshot_11.jpg" alt="" />
+                            </li>
+                        </ul>
+                        
                     </div>
-                </div>
-                <!-- End Slide Item -->
+                    <!-- End Work Gallery -->
                 
-                <!-- Slide Item -->
-                <div>
-                    <div class="container relative">
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-2 align-center">
-                                <!-- Section Icon -->
-                                <div class="section-icon">
-                                    <span class="icon-quote"></span>
-                                </div>
-                                <!-- Section Title --><h3 class="small-title font-alt">What people say?</h3>
-                                <blockquote class="testimonial white">
-                                    <p>
-                                        Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
-                                        risus utaliquam dapibus. Thanks!
-                                    </p>
-                                    <footer class="testimonial-author">
-                                        John Doe, doodle inc.
-                                    </footer>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <!-- End Slide Item -->
-                
-                <!-- Slide Item -->
-                <div>
-                    <div class="container relative">
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-2 align-center">
-                                <!-- Section Icon -->
-                                <div class="section-icon">
-                                    <span class="icon-quote"></span>
-                                </div>
-                                <!-- Section Title --><h3 class="small-title font-alt">What people say?</h3>
-                                <blockquote class="testimonial white">
-                                    <p>
-                                        Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
-                                        risus utaliquam dapibus. Thanks!
-                                    </p>
-                                    <footer class="testimonial-author">
-                                        John Doe, doodle inc.
-                                    </footer>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Slide Item -->
-                
             </section>
-            <!-- End Testimonials Section -->
+            <!-- End Section -->
+            
 
+            <!-- Call Action Section -->
+            <section class="small-section bg-dark" id="city">
+                <div class="container relative">
+                    
+                    <div class="align-center">
+                        <h3 class="banner-heading font-alt">Cities</h3>
+                    </div>
+                    
+                </div>
+            </section>
+            <!-- End Call Action Section -->
+            
+            <!-- Section -->
+            <section class="page-section bg-gray fullwidth-slider">
+                <!-- Slide Item -->
+                <div id="sanfrancisco">
+                    <div class="container relative">
+                        <div class="row">
+                        
+                            <div class="col-md-5 col-lg-4 mb-sm-40">
+                                
+                                <!-- About Project -->
+                                <div class="text">
+                                    
+                                    <h3 class="font-alt mb-30 mb-xxs-10">San Francisco</h3>
+                                    <p><small>
+                                    Freely explore massive area of San Francisco. Teleport yourself from AT&amp;T park to Golden Gate Bridge. Get down your hands and knees on Market St. See the city skylines from Twin Peak. Walk alongside Coit Tower like a giant. Touch Transamerica Pyramid. Watch sunrise over Bay Bridge and Ferry Building. You'll experience San Francisco from perspectives you've never seen before. 
+                                    </small></p>
+                                    
+                                    <div class="mt-40">
+                                        <a href="http://store.steampowered.com/app/517990/" target="_blank" class="btn btn-mod btn-medium btn-round">Available on Steam <i class="fa fa-steam fa-lg dark"></i></a>
+                                    </div>
+                                    
+                                </div>
+                                <!-- End About Project -->
+                                
+                            </div>
+                            
+                            <div class="col-md-7 col-lg-offset-1">
+                                
+                                <!-- Work Gallery -->
+
+                                <div class="work-full-media mb-80 mb-xs-40">
+                        
+                                    <ul class="clearlist ">
+                                        <li>
+                                            <img src="images/capsule_main_sf.png" alt="" />
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                                <!-- End Work Gallery -->
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                <!-- End Slide Item -->
+
+
+                 <!-- Slide Item -->
+                <div id="newyorkcity">
+                    <div class="container relative">
+                        <div class="row">
+                        
+                            <div class="col-md-5 col-lg-4 mb-sm-40">
+                                
+                                <!-- About Project -->
+                                <div class="text">
+                                    
+                                    <h3 class="font-alt mb-30 mb-xxs-10">New York City</h3>
+                                    <p><small>
+                                    Stand at the top of the Empire State Building. Look down on Times Square and take a walk at the Fifth Avenue. 
+                                    </small></p>
+                                    
+                                    <div class="mt-40">
+                                        <a href="https://store.steampowered.com/app/517990/" target="_blank" class="btn btn-mod btn-medium btn-round">Coming soon to Steam <i class="fa fa-steam fa-lg dark"></i></a>
+                                    </div>
+                                    
+                                </div>
+                                <!-- End About Project -->
+                                
+                            </div>
+                            
+                            <div class="col-md-7 col-lg-offset-1">
+                                
+                                <!-- Work Gallery -->
+
+                                <div class="work-full-media mb-80 mb-xs-40">
+                        
+                                    <ul class="clearlist ">
+                                        <li>
+                                            <img src="images/capsule_main_nyc.png" alt="" />
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                                <!-- End Work Gallery -->
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                <!-- End Slide Item -->
+
+                <!-- Slide Item -->
+                <div id="chicago">
+                    <div class="container relative" >
+                        <div class="row">
+                        
+                            <div class="col-md-5 col-lg-4 mb-sm-40">
+                                
+                                <!-- About Project -->
+                                <div class="text">
+                                    
+                                    <h3 class="font-alt mb-30 mb-xxs-10">Chicago</h3>
+                                    <p><small>
+                                     Observe the city skyline reflection on Cloud Gate in the Millennium Park. Take a 1,450-foot leap from Lake Michigan to the SkyDeck at Willis Tower. 
+                                    </small></p>
+                                    
+                                    <div class="mt-40">
+                                        <a href="http://store.steampowered.com/app/517990/" target="_blank" class="btn btn-mod btn-medium btn-round">Coming soon to Steam <i class="fa fa-steam fa-lg dark"></i></a>
+                                    </div>
+                                    
+                                </div>
+                                <!-- End About Project -->
+                            </div>
+                            
+                            <div class="col-md-7 col-lg-offset-1">
+                                
+                                <!-- Work Gallery -->
+
+                                <div class="work-full-media mb-80 mb-xs-40">
+                        
+                                    <ul class="clearlist">
+                                        <li>
+                                            <img src="images/capsule_main_chicago.png" alt="" />
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                                <!-- End Work Gallery -->
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                <!-- End Slide Item -->
+            </section>
+            <!-- End Section -->
+
+                     
+            
+               
+            <!-- Divider -->
+            <hr class="mt-0 mb-0 "/>
+            <!-- End Divider -->
+
+         
+            <!-- Contact Section -->
+            <section class="page-section" id="contact" >
+                <div class="container relative">
+                          
+                    <h2 class="section-title font-alt mb-70 mb-sm-40">
+                        Contact &amp; Support
+                    </h2>
+
+                    <div class="row">
+                        
+                        <div class="col-md-8 col-md-offset-2">
+                          
+
+
+                            <div class="row">
+                            
+                                
+                                <!-- Email -->
+                                <div class="col-sm-4 pt-20 pb-20 pb-xs-0 col-sm-offset-4">
+                                    <div class="contact-item">
+                                        <div class="ci-icon">
+                                            <i class="fa fa-envelope"></i>
+                                        </div>
+                                        <div class="ci-title font-alt">
+                                            Email
+                                        </div>
+                                        <div class="ci-text">
+                                            <a href="mailto:info@cityvr.com">info@cityvr.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Email -->
+                               
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </section>
+            <!-- End Contact Section -->
+            
             <!-- Newsletter Section -->
             <section class="small-section bg-gray-lighter">
                 <div class="container relative">
@@ -496,54 +503,7 @@
             </section>
             <!-- End Newsletter Section -->
 
-            <!-- Contact Section -->
-            <section class="page-section bg-gray-lighter" id="contact" >
-                <div class="container relative">
-                          
-                    <h2 class="section-title font-alt mb-70 mb-sm-40">
-                        Contact &amp; Support
-                    </h2>
 
-                    <div class="row mb-60 mb-xs-40">
-                        
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="row section-text">
-                            <br/>
-                            <br>
-                            <br>
-                            <br>
-                            </div>
-
-
-                            <div class="row">
-                            
-                                
-                                <!-- Email -->
-                                <div class="col-sm-4 pt-20 pb-20 pb-xs-0 col-sm-offset-4">
-                                    <div class="contact-item">
-                                        <div class="ci-icon">
-                                            <i class="fa fa-envelope"></i>
-                                        </div>
-                                        <div class="ci-title font-alt">
-                                            Email
-                                        </div>
-                                        <div class="ci-text">
-                                            <a href="mailto:info@cityvr.com">info@cityvr.com</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Email -->
-                               
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-            </section>
-            <!-- End Contact Section -->
-            
-            
             <!-- Foter -->
             <footer class="page-section footer pb-60">
                 <div class="container">
@@ -554,6 +514,7 @@
                         <a href="http://www.instagram.com/amber.garage" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
                         <a href="http://www.youtube.com/ambergarage" title="Youtube" target="_blank"><i class="fa fa-youtube"></i></a>
                         <a href="http://vimeo.com/ambergarage" title="Vimeo" target="_blank"><i class="fa fa-vimeo-square"></i></a>
+                        <a href="http://twitter.com/ambergarage" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
                     </div>
                     <!-- End Social Links -->  
 
@@ -562,7 +523,7 @@
                         
                         <!-- Copyright -->
                         <div class="footer-copy font-alt">
-                            <a href="http://ambergarage.com" target="_blank">&copy; Amber Garage. 2016</a>.
+                            <a href="https://ambergarage.com" target="_blank">&copy; Amber Garage. 2016</a>.
                         </div>
                         <!-- End Copyright -->
                         
@@ -633,25 +594,30 @@
         <script type="text/javascript" src="js/jquery.backgroundvideo.min.js"></script>   
         <script>
                     // Video Init
+
             $(document).ready(function(){
+                $("#sanfrancisco_menu_btn").click(function (e) {
+                    var owl = $("#home").data("owlCarousel");
+                    owl.goTo(0);
+                });
+                $("#newyorkcity_menu_btn").click(function (e) {
+                    var owl = $("#home").data("owlCarousel");
+                    owl.goTo(1);
+                });
+                $("#chicago_menu_btn").click(function (e) {
+                    var owl = $("#home").data("owlCarousel");
+                    owl.goTo(2);
+                });
+
                 if (!($("html").hasClass("mobile"))){
-                    var videobackground_1 = new $.backgroundVideo($('#video-background-1'), {
+                   
+                    var videobackground_cityvr = new $.backgroundVideo($('#video-background-cityvr'), {
                         "align": "centerXY",
-                        "width": 1280,
-                        "height": 720,
+                        "width": 1920,
+                        "height": 1080,
                         "path": "video/",
-                        "filename": "video",
-                        "types": ["mp4", "ogg", "webm"],
-                        "autoplay": true,
-                        "loop": true
-                    });
-                    var videobackground_2 = new $.backgroundVideo($('#video-background-2'), {
-                        "align": "centerXY",
-                        "width": 1280,
-                        "height": 720,
-                        "path": "video/",
-                        "filename": "video-restaurant",
-                        "types": ["mp4", "ogg", "webm"],
+                        "filename": "cityvr",
+                        "types": ["webm", "mp4"],
                         "autoplay": true,
                         "loop": true
                     });
