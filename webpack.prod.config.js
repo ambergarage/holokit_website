@@ -5,6 +5,7 @@ const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const imageminMozjpeg = require('imagemin-mozjpeg');
 const imageminPngquant = require('imagemin-pngquant');
 const HtmlBeautifyPlugin = require('html-beautify-webpack-plugin');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = merge(baseConfig, {
     mode: 'production',
@@ -12,11 +13,23 @@ module.exports = merge(baseConfig, {
         minimizer: [
             new UglifyJSPlugin({
                 parallel: true,
+                cache: true,
                 uglifyOptions: {
                     output: {
                         comments: false
+                    },
+                    compress: {
+                        dead_code: true,
+                        passes: 2
                     }
                 }
+            }),
+            new OptimizeCssAssetsPlugin({
+                cssProcessorOptions: {
+                    discardDuplicates: { removeAll: true },
+                    discardComments: {removeAll: true }
+                },
+                canPrint: true
             })
         ],
     },

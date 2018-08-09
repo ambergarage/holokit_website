@@ -188,14 +188,17 @@ module.exports = {
       'window.jQuery': 'jquery'
     }),
     new CopyWebpackPlugin([{
-      from: 'assets/images/**/*.{jpg,jpeg,png,gif,svg}',
+      context: 'assets/images',
+      from: '**/*.{jpg,jpeg,png,gif,svg}',
       to: 'images'
     }, {
-      from: 'assets/fonts/**/*.{eot,ttf,svg,woff,woff2}',
+      context: 'assets/fonts',
+      from: '**/*.{eot,ttf,svg,woff,woff2}',
       to: 'fonts'
     }, {
-      from: 'static',
-      to: 'static'
+      context: 'static',
+      from: '',
+      to: ''
     }]),
     new MiniCssExtractPlugin({
       filename: 'css/[name].[chunkhash].css'
