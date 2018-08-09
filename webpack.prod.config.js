@@ -13,15 +13,11 @@ module.exports = merge(baseConfig, {
         minimizer: [
             new UglifyJSPlugin({
                 parallel: true,
-                cache: true,
                 uglifyOptions: {
                     output: {
                         comments: false
                     },
-                    compress: {
-                        dead_code: true,
-                        passes: 2
-                    }
+                    compress: false
                 }
             }),
             new OptimizeCssAssetsPlugin({
@@ -47,18 +43,6 @@ module.exports = merge(baseConfig, {
                     quality: 95
                 })
             ]
-        }),
-        new HtmlBeautifyPlugin({
-            config: {
-                html: {
-                    end_with_newline: true,
-                    indent_size: 4,
-                    indent_with_tabs: true,
-                    indent_inner_html: true,
-                    preserve_newlines: false,
-                    unformatted: ['i', 'strong', 'p > span', 'p > a']
-                }
-            }
         })
     ]
 });

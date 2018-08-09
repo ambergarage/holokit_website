@@ -216,6 +216,21 @@ module.exports = {
       const extension = file.split('.')[1];
 
       return new HtmlWebpackPlugin({
+        minify: isProduction ? {
+          html5                          : true,
+          collapseWhitespace             : true,
+          minifyCSS                      : true,
+          minifyJS                       : true,
+          minifyURLs                     : false,
+          removeAttributeQuotes          : true,
+          removeComments                 : true,
+          removeEmptyAttributes          : true,
+          removeOptionalTags             : true,
+          removeRedundantAttributes      : true,
+          removeScriptTypeAttributes     : true,
+          removeStyleLinkTypeAttributese : true,
+          useShortDoctype                : true
+        } : {},
         filename: dirOutput ? `.${dirOutput}/${name}.html` : `${name}.html`,
         template: path.resolve(__dirname, `./${dir}/${name}.${extension}`)
       });

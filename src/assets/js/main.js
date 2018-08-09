@@ -576,7 +576,7 @@ jQueryBridget('imagesLoaded', ImagesLoaded, jQuery);
             }
         };
 
-        if ($('#mailchimp').data("mailchimp-url") && typeof $('#mailchimp').data("mailchimp-url") == "string") {
+        if ($('#mailchimp') && $('#mailchimp').data("mailchimp-url") && typeof $('#mailchimp').data("mailchimp-url") == "string") {
             $('#mailchimp').ajaxChimp({
                 callback: mailchimpCallback,
                 url: $('#mailchimp').data("mailchimp-url")
