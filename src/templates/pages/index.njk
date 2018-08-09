@@ -1,7 +1,241 @@
 {% extends("layouts/default.njk") %}
 
-{% set pageTitle = 'Home' %}
-
 {% block content %}
-    <div>Content</div>
+    <section class="home-section bg-dark fullscreen-container bg-scroll" id="home" data-background="images/mobile-video-placeholder.jpg">
+
+        <div class="js-height-full container">
+            
+            <!-- Video BG Init -->
+            <div class="player" data-property="{videoURL:'OKU9gdLisc4', containment:'#home', useOnMobile: true, quality: 'highres', loop:true, autoPlay:true, showControls:false, showYTLogo: false, mute:true, startAt:0, opacity:1, mobileFallbackImage: 'images/mobile-video-placeholder.jpg'}">
+                 <div class="bg-video-overlay bg-dark-alfa-50"></div>
+            </div>
+             <!-- End Video BG Init -->
+            
+            <!-- Hero Content -->
+            <div class="home-content">
+                <div class="home-text">
+                    
+                    <h2 class="hs-line-special hs-shadow font-alt mb-50 mb-xs-30">
+                        City Of Sparkles
+                    </h2>
+
+                    <h1 class="hs-line-8 hs-shadow font-alt mb-50 mb-xs-30" style="font-weight: 800;">
+                       An Interactive Virtual Reality Experiment for storytelling based on Twitter Real-time Data
+                    </h1>
+                    
+                    <div class="local-scroll">
+                        <a href="https://youtu.be/?v=508if1GD8Ao?cc_load_policy=0&controls=0&fs=1&iv_load_policy=3&loop=0&rel=0&showinfo=0&modestbranding=1&autoplay=1" class="btn btn-mod btn-w btn-medium btn-round lightbox mfp-iframe mfp-video">Play Trailer</a>
+                        <span class="hidden-xs">&nbsp;</span>
+                        <a href="#experience" class="btn btn-mod btn-w btn-medium btn-round hidden-xs">Download</a>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+            <div class="local-scroll">
+                <a href="#about" class="scroll-down"><i class="fa fa-angle-down scroll-down-icon"></i></a>
+            </div>
+
+            <!-- End Hero Content -->
+        </div>
+    </section>
+
+
+<!-- About Section -->
+<section class="page-section" id="about">
+    <div class="container relative">
+        
+
+        <h2 class="section-title font-alt mb-70 mb-sm-40">
+            What's City of Sparkles? 
+        </h2>
+
+        <div class="section-text col-md-8 col-md-offset-2 mb-50 mb-sm-20">
+            <div class="row">
+                <div>
+                   City of Sparkles is an interactive virtual reality experience using real Twitter messages to tell stories of New York City where an artistic virtual New York City is dynamically shaped with sparkles. Each of sparkles represents a real Twitter message from residents of New York City, and its color and motion represents the emotion mood and the geographical location of the message. Audience can freely fly in the virtual city, and discover the messages left in the city, and feel the lonely souls. 
+                    <br><br>
+                    The experience contains several chapters. Each chapter has a story line and its own emotion mood. We use Natural Language Processing to programmatically curate the tweets to match the mood of the chapter. For example, the black and white scene represents anger and anxiety, while the blue scene consists of tweets reflecting lonely but positive emotion. Audience can interact with the sparkles and feel the emotion of the messages. In accordance to the emotion, abstract visual effects and motion are happening as well as adaptive contemporary music and sound, so as to strengthen the feeling of the audience. 
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End About Section -->
+
+<!-- Divider -->
+<hr class="mt-0 mb-0 "/>
+<!-- End Divider -->
+
+<section class="page-section bg-gray" id="experience" >
+    <div class="container relative">
+              
+        <h2 class="section-title font-alt mb-70 mb-sm-40">
+            VR experience
+        </h2>
+        
+        <div class="section-text col-md-8 col-md-offset-2 ">
+            <div class="row mb-50 mb-sm-20">
+                <div>
+                    The current build supports any one of these devices: 
+                    Oculus Rift, HTC Vive, and Windows Mixed Reality.
+                </div>
+                <br>
+                <br>
+            </div>
+                       
+            <div class="row wow fadeInUp" data-wow-duration="1.5s">
+                <div class="col-sm-4 col-sm-offset-4 pt-20 pb-20 pb-xs-0">
+                    <div class="contact-item">
+                        <div class="ci-icon">
+                            <i class="fa fa-download"></i>
+                        </div>
+                        <div class="ci-title font-alt">
+                            For Windows
+                        </div>
+                        <div class="ci-text">
+                            <a href="mailto:info@cityofsparkles.art">Download upon request</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Email -->
+            </div>
+        </div>
+        
+    </div>
+
+
+</section>
+
+
+<!-- Divider -->
+<hr class="mt-0 mb-0 "/>
+<!-- End Divider -->
+
+<!-- Head Section -->
+<section class="small-section bg-gray-lighter">
+    <div class="relative container align-left">
+
+         <h2 class="section-title font-alt mb-70 mb-sm-40">
+            VR Interaction Teaser 
+        </h2>
+
+        <div class="row">
+            <div class="video">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/7UFCQrrVgKQ?cc_load_policy=0&rel=0&showinfo=0&modestbranding=1" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<!-- End Head Section -->
+
+<!-- Divider -->
+<hr class="mt-0 mb-0 "/>
+<!-- End Divider -->
+
+<!-- Team & Credits Section -->
+<section class="page-section" id="team" >
+    <div class="container relative">
+
+        <h2 class="section-title font-alt mb-70 mb-sm-40">
+            Team & Credits
+        </h2>
+        
+         <div class="row" >
+            
+            <div class="col-md-8 col-md-offset-2">
+              
+                <div class="row">
+
+                   <div class="col-md-8 col-md-offset-2 text-center">
+
+                    Made by friends of <a href="https://ambergarage.com/">Amber Garage</a><br><br><br>
+
+                   <b>Director & Developer: </b>Yang Liu<br>
+                   <b>Composer: </b> Ran Duan<br>
+                   <b>Concept & Producer: </b> Botao Hu<br><br>
+
+                   <b>Data: </b> collected from Twitter from Jan 2017 to Jun 2018
+                   <br>
+                   </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title font-alt mb-70 mb-sm-40">
+            <br>
+            <br>
+            <br>
+            ACKNOWLEDGEMENT
+        </h2>
+
+         <div class="row">
+            
+            <div class="col-md-8 col-md-offset-2">
+              
+                <div class="row">
+               
+                   <div class="col-md-8 col-md-offset-2 text-center">
+                       <b>Video Editor</b>: Guu & Bobe<br>
+                       <b>Special Thanks</b>: Amy Gussin<br>
+                       <b>Art Consulting</b>: Ren Wang, Fengyuan Zhu<br>
+                       <b>Publishing</b>: Amber Garage<br>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End About Section -->
+
+<!-- Divider -->
+<hr class="mt-0 mb-0 "/>
+<!-- End Divider -->
+
+
+<section class="page-section bg-gray-lighter" id="contact" >
+    <div class="container relative">
+              
+        <h2 class="section-title font-alt mb-70 mb-sm-40">
+            Contacts
+        </h2>
+        
+        <div class="section-text col-md-8 col-md-offset-2 ">
+            <div class="row mb-50 mb-sm-20">
+                <div>
+                    We are looking for partnership for City Of Sparkles: virtual reality content provider, exhibitor, artists, museum who would like to spread this idea to the world.
+                </div>
+                <br>
+                <br>
+               
+            </div>
+                       
+            <div class="row wow fadeInUp" data-wow-duration="1.5s">
+                <div class="col-sm-4 col-sm-offset-4 pt-20 pb-20 pb-xs-0">
+                    <div class="contact-item">
+                        <div class="ci-icon">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="ci-title font-alt">
+                            Email
+                        </div>
+                        <div class="ci-text">
+                            <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+</section>
+
+
+
 {% endblock %}
+

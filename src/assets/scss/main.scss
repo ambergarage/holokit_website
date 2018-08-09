@@ -7,13 +7,6 @@
 @import "tools/tools";
 
 /* -----------------------------------------------------------------------------
- * VENDORS
- */
-
-@import "vendor/vendor";
-
-
-/* -----------------------------------------------------------------------------
  * BASE
  */
 
@@ -48,3 +41,14 @@
  */
 
 @import "utilities/utilities";
+
+/* -----------------------------------------------------------------------------
+ * VENDORS
+ */
+
+@import "vendor/vendor";
+
+
+@import "theme/style.css";
+@import "theme/style-responsive.css";
+@import "theme/vertical-rhythm.min.css";

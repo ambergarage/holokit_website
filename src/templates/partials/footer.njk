@@ -1,1 +1,44 @@
-<footer>footer</footer>
+<!-- Foter -->
+<footer class="page-section footer pb-60">
+    <div class="container">
+        
+        <!-- Social Links -->
+        <div class="footer-social-links mb-50 mb-xs-50 wow fadeInUp" data-wow-duration="1.5s">
+            {% if site.author.social_media.facebook %} 
+            <a href="https://www.facebook.com/{{ site.author.social_media.facebook }}" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+            {% endif %}
+            {% if site.author.social_media.instagram %} 
+            <a href="https://www.instagram.com/{{ site.author.social_media.instagram }}" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+            {% endif %}
+            {% if site.author.social_media.youtube %} 
+            <a href="https://www.youtube.com/{{ site.author.social_media.youtube }}" title="Youtube" target="_blank"><i class="fa fa-youtube"></i></a>
+            {% endif %}
+            {% if site.author.social_media.vimeo %} 
+            <a href="https://vimeo.com/{{ site.author.social_media.vimeo }}" title="Vimeo" target="_blank"><i class="fa fa-vimeo-square"></i></a>
+            {% endif %}
+            {% if site.author.social_media.twitter %} 
+            <a href="https://twitter.com/{{ site.author.social_media.twitter }}" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+            {% endif %}
+        </div>
+        <!-- End Social Links -->
+
+        <!-- Footer Text -->
+        <div class="footer-text">
+            
+            <!-- Copyright -->
+            <div class="footer-copy font-alt">
+                <a href="{{ site.author.url }}" target="_blank">&copy; {{ site.author.name }}. 2018</a>.
+            </div>
+            <!-- End Copyright -->
+            
+            <div class="footer-made">
+                {{ site.author.slogan }}
+            </div>
+            
+        </div>
+        <!-- End Footer Text --> 
+        
+     </div>
+     
+</footer>
+<!-- End Foter -->

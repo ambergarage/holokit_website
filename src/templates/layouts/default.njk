@@ -1,19 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <title>{% if pageTitle %}{{ pageTitle }}{% else %}Page without title{% endif %}</title>
-    </head>
-    <body>
-        {% block header %}
-            {% include "partials/header.njk" %}
+<html>
+<!-- Head tag -->
+{% include "partials/head.njk" %}
+<body class="appear-animate">
+    
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader">Loading...</div>
+    </div>
+    <!-- End Page Loader -->
+
+    <!-- Page Wrap -->
+    <div class="page" id="top">
+        {% include "partials/navigation.njk" %}
+
+        {% block content %}
         {% endblock %}
 
-        {% block content %}{% endblock %}
+        {% include "partials/footer.njk" %}
+    </div>
 
-        {% block footer %}
-            {% include "partials/footer.njk" %}
-        {% endblock %}
-    </body>
+    <script type="text/javascript" src="https://www.youtube.com/player_api"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZsDkJFLS0b59q7cmW0EprwfcfUA8d9dg"></script>
+</body>
 </html>
+

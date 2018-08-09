@@ -1,0 +1,25 @@
+<!-- Navigation panel -->
+<nav class="main-nav dark transparent stick-fixed">
+    <div class="full-wrapper relative clearfix">
+        <!-- Logo ( * your text or image into link tag *) -->
+        <div class="nav-logo-wrap local-scroll">
+            <a href="#top" class="logo">
+            {% if site.logo %}
+                <img src="{{ site.logo }}" alt="" />
+            {% endif %} 
+            </a>
+        </div>
+        <div class="mobile-nav ">
+            <i class="fa fa-bars"></i>
+        </div>
+        <!-- Main Menu -->
+        <div class="inner-nav desktop-nav">
+            <ul class="clearlist scroll-nav local-scroll">
+            {% for link, title in site.menu %}
+                <li><a href="#{{ link }}">{{ title }}</a></li>
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End Navigation panel -->
