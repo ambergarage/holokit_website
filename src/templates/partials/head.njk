@@ -3,10 +3,12 @@
 
     {% include "partials/meta-tags.njk" %}
 
-    <!-- Favicons -->
     {% if site.favicon %}
+    <!-- Favicons -->
     <link rel="shortcut icon" href="{{ site.favicon }}" />
     {% endif %}
+
+    <link rel="canonical" href="{{ site.url }}" />
 
     {% include "partials/google-analytics.njk" %}
 </head>

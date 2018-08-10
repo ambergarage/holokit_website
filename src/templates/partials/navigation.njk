@@ -1,12 +1,12 @@
 <!-- Navigation panel -->
-<nav class="main-nav dark transparent stick-fixed">
+<nav class="main-nav js-stick">
     <div class="full-wrapper relative clearfix">
         <!-- Logo ( * your text or image into link tag *) -->
         <div class="nav-logo-wrap local-scroll">
             <a href="#top" class="logo">
             {% if site.logo %}
                 <img src="{{ site.logo }}" alt="" />
-            {% endif %} 
+            {% endif %}
             </a>
         </div>
         <div class="mobile-nav ">
@@ -16,7 +16,7 @@
         <div class="inner-nav desktop-nav">
             <ul class="clearlist scroll-nav local-scroll">
             {% for link, title in site.menu %}
-                <li><a href="#{{ link }}">{{ title }}</a></li>
+                <li><a href="{{ link }}">{{ title | safe }}</a></li>
             {% endfor %}
             </ul>
         </div>
