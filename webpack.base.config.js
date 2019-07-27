@@ -196,9 +196,7 @@ module.exports = {
       from: '**/*.{eot,ttf,svg,woff,woff2}',
       to: 'fonts'
     }, {
-      context: 'static',
-      from: '',
-      to: ''
+      from: 'static'
     }]),
     new MiniCssExtractPlugin({
       filename: 'css/[name].[chunkhash].css'

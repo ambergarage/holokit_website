@@ -17,7 +17,7 @@ module.exports = merge(baseConfig, {
                     output: {
                         comments: false
                     },
-                    compress: false
+                    compress: true
                 }
             }),
             new OptimizeCssAssetsPlugin({
