@@ -15,9 +15,10 @@ module.exports = merge(baseConfig, {
                 parallel: true,
                 uglifyOptions: {
                     output: {
-                        comments: false
+                        comments: false,
+                        beautify: true
                     },
-                    compress: true
+                    compress: false
                 }
             }),
             new OptimizeCssAssetsPlugin({
@@ -36,11 +37,11 @@ module.exports = merge(baseConfig, {
             jpegtran: null,
             plugins: [
                 imageminMozjpeg({
-                    quality: 60,
+                    quality: 90,
                     progressive: true
                 }),
                 imageminPngquant({
-                    quality: 95
+                    quality: [0.90, 0.95]
                 })
             ]
         })

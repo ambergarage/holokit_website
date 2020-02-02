@@ -26,16 +26,16 @@ Primary use:    MultiPurpose Template
    ============================== */
 
 @media only screen and (max-width: 1366px) {
-	
-    	
+    
+        
     .inner-nav ul li {
         margin-left: 25px;
     }
-	
+    
 }  
 
 @media only screen and (max-width: 1200px) {
-	
+    
     .hs-wrap {
         max-width: 540px;
     }
@@ -328,8 +328,7 @@ Primary use:    MultiPurpose Template
         font-size: 13px;
     }
 
-    
-    #map-canvas{
+    .google-map > iframe{
         height: 300px;
     }
     
@@ -678,8 +677,8 @@ Primary use:    MultiPurpose Template
     .section-title,
     .split-section-headings .section-title,
     .wide-heading {
-        font-size: 15px;
-        letter-spacing: 5px;
+        font-size: 24px;
+        letter-spacing: 2px;
     }    
     .section-heading,
     .sub-heading{
@@ -779,7 +778,7 @@ Primary use:    MultiPurpose Template
         font-size: 16px;
     }
     
-    #map-canvas {
+    .google-map > iframe{
         height: 300px;
     }
     

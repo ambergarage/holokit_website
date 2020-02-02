@@ -6,7 +6,6 @@ module.exports = (ctx) => ({
     plugins: {
         'autoprefixer': {
         },
-        'css-mqpacker': {},
         'postcss-pxtorem': isProduction ? {
             rootValue: 16,
             propList: ['*']

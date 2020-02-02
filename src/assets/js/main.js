@@ -1198,8 +1198,8 @@ function init_wow(){
             boxClass: 'wow',
             animateClass: 'animated',
             offset: 90,
-            mobile: false,
-            live: false
+            mobile: true,
+            live: true
         });
 
         if ($("body").hasClass("appear-animate")){
